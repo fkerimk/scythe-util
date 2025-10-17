@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<RootNamespace>scythe</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<PublishRids>win-x64;linux-x64</PublishRids>
+		<RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="scythe-lib">
+			<HintPath>..\lib\bin\scythe-lib.dll</HintPath>
+		</Reference>
+  	</ItemGroup>
+</Project>
